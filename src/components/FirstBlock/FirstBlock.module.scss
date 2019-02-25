@@ -1,0 +1,205 @@
+
+.firstWrapper {
+    background: url('/assets/background1.jpg');
+    background-size: cover;
+    background-position: 50%;
+    min-height: 100vh;
+  }
+  
+  .firstBlock {
+    margin: auto;
+    padding: 0 20px;
+    min-height: 100vh;
+  }
+  
+  .logo {
+    padding-top: 25px;
+    display: flex;
+    text-decoration: none;
+  };
+
+  .addLogo {
+    margin-left: 7px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+.date {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  right: 0;
+  top: 37px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  text-align: center;
+  margin-top: 124px;
+}
+
+.submitFormWrapper {
+  text-align: center;
+}
+
+.submitForm {
+  width: 66.3%;
+  height: 80px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.submitInput {
+  width: 100%;
+  height: 80px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  z-index: 2;
+  font-size: 22px;
+  color: #333333;
+  font-weight: 400;
+  padding-left: 25px;
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+}
+
+.submitButton {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  z-index: 3;
+  display: inline-block;
+  border-radius: 6px;
+  border: 0;
+  color: #fff;
+  background-color: #5f6062;
+  font-size: 24px;
+  padding: 13px 24px;
+  cursor: pointer;
+}
+
+.submitButtonSearch {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  z-index: 3;
+  display: inline-block;
+  border-radius: 6px;
+  border: 0;
+  color: #fff;
+  background-color: #5f6062;
+  font-size: 24px;
+  padding: 13px 24px;
+  cursor: pointer;
+  display: none;
+  background: url('/assets/search.svg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+.resultMessage {
+
+}
+
+.result {
+  position: relative;
+  width: 100%;
+  top: -10px;
+  width: 100%;
+  padding: 17px 10px 13px 10px;
+  border-radius: 6px;
+  background-color: rgba(51, 51, 51, 0.85);
+  text-align: center;
+  color: #fff;
+  box-sizing: border-box;
+  right: 0;
+  z-index: 1;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all .3s;
+  opacity: 0;
+  &.show {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+
+.resultLink {
+  color: #77b53c;
+  text-decoration: underline;
+}
+
+.createButtonWrapper {
+text-align: center;
+margin-bottom: 138px;
+}
+
+.createButton {
+  border-radius: 6px;
+  border: 0;
+  color: #fff;
+  background-color: #77b53c;
+  font-size: 24px;
+  padding: 12px 47px;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nextButton {
+  background: url('/assets/down.png');
+  background-size: cover;
+  background-position: 50%;
+  width: 27px;
+  height: 50px;
+  left: 50%;
+  margin: auto;
+  display: block;
+}
+
+@media screen and (min-width: 859px) {
+  .firstBlock {
+    max-width: 1092px;
+    min-width: 819px;
+        width: 90%;
+  }
+
+
+}
+
+@media screen and (max-width: 859px) {
+  .date {
+    top: 100px;
+  }
+  .title {
+    font-size: 60px;
+  }
+  .submitForm {
+    width: 88%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .submitButtonSearch {
+    display: block;
+    padding: 24px 24px;
+  }
+  .submitButton {
+    display: none;
+  }
+}
